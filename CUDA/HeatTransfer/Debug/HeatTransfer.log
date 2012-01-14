@@ -1,0 +1,74 @@
+﻿Build started 1/13/2012 8:57:21 PM.
+     1>Project "C:\Users\Jeffrey\workspace\CUDA\CUDA\HeatTransfer\HeatTransfer.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\HeatTransfer.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include" /I. /FIcuda_runtime.h /c C:\Users\Jeffrey\workspace\CUDA\CUDA\HeatTransfer\kernel.cu 
+       AddCudaCompilePropsDeps:
+         Found "CudaToolkitCustomDir".
+         Found "AdditionalDeps".
+         Found "CompileOut".
+         Found "Include".
+         Found "Keep".
+         Found "KeepDir".
+         Found "NvccCompilation".
+         Found "NvccPath".
+         Found "RequiredIncludes".
+         Found "TargetMachinePlatform".
+         Found "CInterleavedPTX".
+         Found "CodeGeneration".
+         Found "GPUDebugInfo".
+         Found "MaxRegCount".
+         Found "PtxAsOptionV".
+         Found "Defines".
+         Found "Emulation".
+         Found "HostDebugInfo".
+         Found "FastMath".
+         Found "Optimization".
+         Found "Runtime".
+         Found "RuntimeChecks".
+         Found "TypeInfo".
+         Found "Warning".
+         Found "AdditionalOptions".
+         Found "CommandLineTemplate".
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\Jeffrey\AppData\Local\Temp\9df8cce3079f4ddc8064a7f622a5cd9e.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"  -G0  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -D_NEXUS_DEBUG -g    -Xcompiler "/EHsc /nologo /Od /Zi  /MDd " -o "Debug\kernel.cu.obj" "C:\Users\Jeffrey\workspace\CUDA\CUDA\HeatTransfer\kernel.cu"
+         
+         C:\Users\Jeffrey\workspace\CUDA\CUDA\HeatTransfer>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"  -G0  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -D_NEXUS_DEBUG -g    -Xcompiler "/EHsc /nologo /Od /Zi  /MDd " -o "Debug\kernel.cu.obj" "C:\Users\Jeffrey\workspace\CUDA\CUDA\HeatTransfer\kernel.cu" 
+         kernel.cu
+         tmpxft_00001090_00000000-0_kernel.cudafe1.gpu
+         tmpxft_00001090_00000000-5_kernel.cudafe2.gpu
+         kernel.cu
+         tmpxft_00001090_00000000-0_kernel.cudafe1.cpp
+         tmpxft_00001090_00000000-11_kernel.ii
+         Deleting file "tmpxft_00001090_00000000-6_kernel.cpp3.o".
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\HeatTransfer.exe.embed.manifest.res" Debug\HeatTransfer_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Jeffrey\workspace\CUDA\CUDA\Debug\HeatTransfer.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\HeatTransfer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Jeffrey\workspace\CUDA\CUDA\Debug\HeatTransfer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Jeffrey\workspace\CUDA\CUDA\Debug\HeatTransfer.lib" /MACHINE:X86 Debug\kernel.cu.obj
+         Debug\HeatTransfer.exe.embed.manifest.res
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\HeatTransfer.exe.embed.manifest" /manifest Debug\HeatTransfer.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\HeatTransfer.exe.embed.manifest.res" Debug\HeatTransfer_manifest.rc 
+       LinkEmbedManifest:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Jeffrey\workspace\CUDA\CUDA\Debug\HeatTransfer.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\HeatTransfer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Jeffrey\workspace\CUDA\CUDA\Debug\HeatTransfer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Jeffrey\workspace\CUDA\CUDA\Debug\HeatTransfer.lib" /MACHINE:X86 Debug\kernel.cu.obj
+         Debug\HeatTransfer.exe.embed.manifest.res
+         HeatTransfer.vcxproj -> C:\Users\Jeffrey\workspace\CUDA\CUDA\Debug\HeatTransfer.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\cudart*.dll" "C:\Users\Jeffrey\workspace\CUDA\CUDA\Debug\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\cudart*.dll" "C:\Users\Jeffrey\workspace\CUDA\CUDA\Debug\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\cudart*.dll" "C:\Users\Jeffrey\workspace\CUDA\CUDA\Debug\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\cudart32_40_17.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\cudart64_40_17.dll
+                 2 file(s) copied.
+       FinalizeBuildStatus:
+         Deleting file "Debug\HeatTransfer.unsuccessfulbuild".
+         Touching "Debug\HeatTransfer.lastbuildstate".
+     1>Done Building Project "C:\Users\Jeffrey\workspace\CUDA\CUDA\HeatTransfer\HeatTransfer.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:19.00
